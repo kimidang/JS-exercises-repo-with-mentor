@@ -86,7 +86,7 @@ const myAnswerForExercise11 = "integer";
 // Exercise 12. What do you think the value of emptyVariable is?
 // Place your answer below:
 
-const myAnswerForExercise12 = "";
+const myAnswerForExercise12 = "undefined";
 
 // Exercise 13. If
 const A = "R";
@@ -109,7 +109,7 @@ const myAnswerForExercise15 = "R2D2";
 const myAnswerForExercise16 = "NaN";
 
 // Exercise 17 What is the value of true || false
-const myAnswerForExercise17 = "";
+const myAnswerForExercise17 = "boolean";
 
 // Exercise 18 What is the value of 1 === "1"
 const myAnswerForExercise18 = "false";
