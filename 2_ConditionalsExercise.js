@@ -51,18 +51,19 @@
 // "The value of num1 is <num1 value> and is greater than 10".
 
 function exercise1(num1) {
-  let answer1 = "num1 is small";
+  let answer1 = "";
   // ------------------------------------------
   // Write your code for exercise 1 below here:
   // ------------------------------------------
+  answer1 = "num1 is small";
   if (num1 > 10) {
-    return  answer1; 
-    } 
+    return (`The value of num 1 is ${num1} and is greater than 10`);
   // ------------------------------------------
   // And above here
   // ------------------------------------------
   return answer1;
 }
+ console.log(exercise1(25));//The value of num 1 is 25 and is greater than 10
 
 // EXERCISE 2.
 // Write an if/else conditional statement that if given a number will assign
@@ -79,12 +80,20 @@ function exercise2(num2) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num2 % 2 === 0){
+  return (`${num2} is even `)
+  } else {
+    return (`${num2} is odd`)
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer2;
 }
+
+console.log(exercise2(4)); // 4 is even
+console.log(exercise2(13));//13 is odd
+console.log(exercise2(6));//6 is even
 
 // EXERCISE 3.
 // Write an if/else if/else block such that if `num3` is positive, then
@@ -100,12 +109,22 @@ function exercise3(num3) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num3 > 0){
+      return (`${num3} is positive`);
+  } else if (num3 < 0){
+      return (`${num3} is negative`);
+  } else {
+       return (`${num3} is zero`);
+  
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer3;
+} 
 }
+console.log(exercise3(4))
+console.log(exercise3(-1))
+console.log(exercise3(0))
 
 // EXERCISE 4.
 // Write an if/else statement such that if `varA` and `varB` are strings or
@@ -118,17 +137,26 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( varA === varB) {
+      return "varA and varB are equal" ;
+  } else {
+      return "varA and varB differ" ;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer4;
 }
 
+console.log(exercise4(2,3))//varA and varB differ
+console.log(exercise4(3,3))//varA and varB are equal
+console.log(exercise4(20,20))//varA and varB are equal
+
 // EXERCISE 5.
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
 // seemed like they are equal, but would not pass the tests? In your analysis
 // consider other data types beside strings and variables.
+  // if we used 3 and "3" although they are the same integer they are not exactly the same because one has "". This would give us a false result. 
 
 // EXERCISE 6.
 // Here, assign the value of true to answer6 if:
@@ -139,12 +167,20 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( varA === varB && varA != varC || varB != varC) {
+    return answer6 = true;
+  } else {
+    return false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer6;
 }
+
+console.log(exercise6(5,5,4))//true
+console.log(exercise6(5,5,5))//false
+console.log(exercise6(15,15,4))//true
 
 // EXERCISE 7.
 // Use a switch conditional statement with case clauses such that if `num7` is
@@ -158,18 +194,44 @@ function exercise6(varA, varB, varC) {
 // "You are one in a million!"
 // Othewise, assign answer7 a value of:
 // "Thanks for that!"
-
+  
 function exercise7(num7) {
   let answer7;
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  switch (num7){
+    case 1:
+      console.log("You won!");
+      break;
+    case 7:
+      console.log("You are lucky!");
+      break;  
+    case 101:
+      console.log("Welcome to coding 101!");
+      break;  
+    case 1000000:
+      console.log("You are one in a million!");
+      break; 
+    default:
+      console.log("Thanks for that!");
+     break;
+      
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer7;
 }
+
+
+console.log(exercise7(101))
+console.log(exercise7(7))
+console.log(exercise7(1000000))
+console.log(exercise7(1))       
+console.log(exercise7(26))  
+            
+            
 
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
