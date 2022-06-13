@@ -239,16 +239,21 @@ console.log(exercise7(26))
 // minimum and maximum
 // if not, assign a value of false to answer8
 function exercise8(amount1, amount2, minimum, maximum) {
-  let answer8;
+  let answer8 = false;
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (( amount1>= minimum && amount1<=maximum) && (amount2 >= minimum && amount2 <= maximum)) {
+    answer8 = true;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer8;
 }
+  
+console.log(exercise8(4,5,1,10));
+console.log(exercise8(23,329,20,25));
 
 // EXERCISE 9.
 // In this exercise, if `item` is a number, follow the rules given in Exercise 7
@@ -262,12 +267,32 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  switch (item){
+    case 1:
+      console.log("You won!");
+      break;
+    case 7:
+      console.log("You are lucky!");
+      break;  
+    case 101:
+      console.log("Welcome to coding 101!");
+      break;  
+    case 1000000:
+      console.log("You are one in a million!");
+      break; 
+    case true:
+      console.log(("Please send a number, that was a") + typeof true);
+     break;
+      
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer9;
 }
+
+console.log(exercise9(101));
+console.log(exercise9(102));
 
 // EXERCISE 10.
 // This question is a modified version of a classic programming question
@@ -278,22 +303,34 @@ function exercise9(item) {
 // "Fizz Buzz" to `answer10` if the value of `num10` is divisible by 15
 // and if none of these conditions are satisfied, then assign the value of
 // `num10` to `answer10`
-
+  
 function exercise10(num10) {
   let answer10;
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if (num10 % 3 === 0 ) 
+      { answer10 = "Fizz";
+  }else if ( num10 % 5 === 0 ) 
+      { answer10 = "Buzz";
+   }else if (num10 % 15 === 0 )
+      { answer10 = "Fizz Buzz";
+   } else {
+      answer10 = num10;
+   }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
   return answer10;
+
 }
+
+console.log(exercise10(30))
+console.log(exercise10(10))
 
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+//It got harder at the end. I used w3 school, mdn, stackoverflow and my notes from codecademy. I had a bit of trouble figuring out the data type, like how i could input it into the console.log. 
 
 // Email your file to us or commit your file to GitHub and email us a link.
