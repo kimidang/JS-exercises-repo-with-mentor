@@ -129,7 +129,7 @@ const myAnswerForExercise22 = "false";
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// i used w3 school and stack overflow. Question 12 and 15 were tougher. 15 was tougher because I knew the letter and integer would not multiply so I wasn't sure how it was supposed to look like,
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
