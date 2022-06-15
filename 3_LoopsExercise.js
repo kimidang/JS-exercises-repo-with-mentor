@@ -180,7 +180,9 @@ for ( let x = 0; x < 101; x ++){
 // But in real life, how would you decide which type of loop to use? You might not have an
 // exact answer, but spend a few minutes thinking about the different types of loops and/or
 // doing some research and write down your thoughts in a comment below:
-//
+//while loop - better for when you do not know number of iterations you need to do
+// do while loop- better when you are asking a question and executed at least once
+//for loop- when you know the number of times the loop should run
 
 // Exercise 11. Now we'll practice using nested loops (a loop inside another loop)!
 // Update the nested loops below to so that for each value of outsideCounter,
