@@ -168,6 +168,14 @@ for ( let i = 0; i<27;i++){
 // ...
 // (Hint - use an if statement in your loop)
 
+for ( let x = 0; x < 101; x ++){
+  if (x === 26) {
+    console.log(x + " my favorite number!")
+  } else {
+    console.log( x + " not my favorite number.")
+  }
+}
+
 // Exercise 10. In some of the exercises above, we had you write all 3 types of loops, for practice.
 // But in real life, how would you decide which type of loop to use? You might not have an
 // exact answer, but spend a few minutes thinking about the different types of loops and/or
