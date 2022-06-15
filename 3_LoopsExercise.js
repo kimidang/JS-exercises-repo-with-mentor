@@ -39,12 +39,81 @@ for (let i = 0; i<=5; i++){
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
 
+//while loop
+let age = 10;
+while (age >= 1){
+  console.log(parseInt(age));
+  age--;
+}
+
+//do while loop
+let chocolateBars = 11;
+let eatenedCandy = 1;
+do {
+    chocolateBars--
+    console.log(parseInt(chocolateBars))
+} while (eatenedCandy < chocolateBars);
+
+// for loop
+for (let i = 10; i>0; i--){
+  console.log(parseInt(i));
+}
+
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+
+//while loop
+let games = 7;
+while (games < 28){
+  console.log(parseInt(games));
+  games++;
+}
+
+
+
+//do while loop
+let iceCream = 6;
+let eatenedIceCream = 27;
+do {
+    iceCream++
+    console.log(parseInt(iceCream))
+} while (iceCream < eatenedIceCream);
+
+
+
+// for loop
+for (let i = 7; i<28; i++){
+  console.log(parseInt(i));
+}
 
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+
+//while loop
+let bacteria = 10;
+while (bacteria < 100){
+  console.log(parseInt(bacteria));
+  bacteria += 10;
+}
+
+//do while loop
+let sleepTime = 0;
+let dreamingMinutes = 100;
+do {
+    sleepTime += 10
+    console.log(parseInt(sleepTime))
+} while (sleepTime < dreamingMinutes);
+
+
+
+// for loop
+for (let i = 10; i<101; i += 10){
+  console.log(parseInt(i));
+} 
+
 
 // Exercise 7. Add a comment as to why the following loop is an infinite loop (will
 // run without ever stopping). Then fix the loop so that it stops when
@@ -55,9 +124,38 @@ while (counterFour < 2) {
   console.log("HELP ME!");
   counterFour--;
 }
+// it will keep going because as you subtract 1 from counterFour it will always be less than 2 therefore it will keep printing infintely. 
+//in other words, condition will always be true and will keep running.
+
+//fixed loop
+let counterFour = 1;
+while (counterFour > -101) {
+  console.log("HELP ME!");
+  counterFour--;
+}
+
+
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
+
+
+let favNumber  = 0;
+while (favNumber < 27){
+  console.log(parseInt(favNumber));
+  favNumber++;
+}
+
+let n = -1;
+do {
+      n ++
+      console.log(parseInt(n))
+} while (n < 26);
+
+
+for ( let i = 0; i<27;i++){
+  console.log(parseInt(i));
+}
 
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
