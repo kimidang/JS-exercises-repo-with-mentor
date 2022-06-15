@@ -11,12 +11,29 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+let numbers = 1;
+while (numbers < 6){
+  console.log(parseInt(numbers));
+  numbers ++;
+}
+
 
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
 
+let maxNumber= 5;
+let minNumber = 1;
+do {
+  minNumber++
+  console.log(parseInt(minNumber))
+} while (minNumber < maxNumber);
+
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+
+for (let i = 0; i<=5; i++){
+  console.log(parseInt(i));
+}
 
 // Exercise 4. Now we want a loop that prints the integers
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
