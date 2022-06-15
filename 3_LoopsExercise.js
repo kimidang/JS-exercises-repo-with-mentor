@@ -205,18 +205,22 @@ inside 1
 *********************************** 
 */
 
-for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
+
+for (let outsideCounter = 0; outsideCounter <= 3 ; outsideCounter++) {
   console.log("counting down from", outsideCounter);
-  for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
-    console.log("inside" /*???*/);
-  }
-  console.log("***********************************");
+  for (let insideCounter = outsideCounter ; insideCounter>=1; insideCounter-- ) {
+     console.log("inside" , insideCounter)
+  }   
 }
+ 
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+//https://stackoverflow.com/questions/6710601/when-to-use-while-loop-rather-than-for-loop, https://www.tutorialrepublic.com/javascript-tutorial/javascript-loops.php,https://mathbits.com/MathBits/CompSci/looping/whichloop.htm
+// i used mdn, quora, my notes from codecademy, practice problems from codecademy. 
+//question 10 it was a bit tough to fix my condidition for my 2nd for loop. i looked at this https://stackoverflow.com/questions/9830650/how-to-stop-a-javascript-for-loop but i had to keep looking at my condition also question 9 helped me in this problem. 
+
 
 // Email your file to us or commit your file to GitHub and email us a link.
 © 2022 GitHub, Inc.
