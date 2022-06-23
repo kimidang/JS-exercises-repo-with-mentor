@@ -57,6 +57,22 @@ console.log(sumOfNumbers(222,111,821));
 // Otherwise it should return false.
 // Then write some function calls you would use to test your function.
 
+function museumDiscount(age){
+  if ( age >=65 || age <= 14 ){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(museumDiscount(26));
+console.log(museumDiscount(45));
+console.log(museumDiscount(2));
+console.log(museumDiscount(1));
+console.log(museumDiscount(65));
+console.log(museumDiscount(100));
+console.log(museumDiscount(14));
+
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
 // Then write some function calls you would use to test your function.
