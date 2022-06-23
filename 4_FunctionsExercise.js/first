@@ -42,6 +42,16 @@ logGreeting2();
 // The function should return the sum of the 3 numbers.
 // Then write some function calls you would use to test your function.
 
+function sumOfNumbers(a,b,c){
+  return a + b + c;
+}
+
+console.log(sumOfNumbers(21,22,23));
+console.log(sumOfNumbers(3,5,7));
+console.log(sumOfNumbers(6,10,2));
+console.log(sumOfNumbers(222,111,821));
+
+
 // Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
 // Write a function that takes in a person's age and returns true if they should get a discount.
 // Otherwise it should return false.
