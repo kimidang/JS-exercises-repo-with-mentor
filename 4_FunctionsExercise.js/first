@@ -106,7 +106,9 @@ console.log("The value of z is " + z);
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
 
-// mysteryFunction1 is the function name, its used to return the name of the function, the value or y is 4 and the value of z is 8. 
+// mysteryFunction1 is the function name, it will be executed when something calls it. When it is executed the value inside the parentheses will mutiply by 2.
+//the value of y is 4 
+//the value of z is 8. 
 //I was right with the values of x and y. Y is already defined as 4 and it also cannot be changed because we used the const variable. 
 //Z is 8 because we call mysteryFunction with the y value with is 4. The 4 is our p1 value and will be multiplied by 2 which equals 8. 
 
@@ -127,7 +129,7 @@ console.log("The value of b is " + b);
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
 
-//mysteryFunction2 has a parameter with 2 integers/values (p1,p2) which will be passed in the function. 
+//mysteryFunction2 has a parameter with 2 integers/values (p1,p2) which will be passed in the function. When it is called on it will take the first argument (p1) and subtract the second argument (p2) and that value will be retured. 
 //a is 6
 //b is 5
 // I got both values correct. For a, the parameter (10,4) will be past into the function as p1,p2 respectively. When we subtract 4 from 10 we get 6 as our a valuye. Now that we have our a value then we can pass the new a value and 1 into the function to get our b value. So 6 - 1 is 5 and that is our b value. 
@@ -158,7 +160,9 @@ console.log(morning);
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+// For number 9, I was having a hard time figuring out how my array wasn't splitting in the way I wanted it to be. It was splitting at the spaces and not by comma.
+//I used this resource (https://www.tutorialrepublic.com/faq/how-to-convert-comma-separated-string-into-an-array-in-javascript.php#:~:text=Answer%3A%20Use%20the%20split(),to%20an%20array%20of%20characters.)
+//This allowed me to figure out that I needed a comma in my " " . By figuring out this allowed me to figure out the second problem in #9 since I had the same issue. 
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link..
