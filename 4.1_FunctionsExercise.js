@@ -32,11 +32,16 @@ console.log(getName());
 // logGreeting2 should call myName() to get your name.
 // Then print your greeting to the console by calling logGreeting2().
 
-function logGreeting2(){
-  let myName = "Kimberly";
-  console.log("Hello! My name is " + myName);
+function logGreetings2(){
+ let name = myName();
+  console.log("Hello my name is "+ name);
 }
-logGreeting2();
+function myName(){
+  return "kimberly " ;
+}
+
+
+logGreetings2();
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
 // The function should return the sum of the 3 numbers.
